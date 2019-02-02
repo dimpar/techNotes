@@ -1,0 +1,1 @@
+**NoSQL** is a collection of data items represented in a key-value store, document-store, wide column store, or a graph database. Data is denormalized, and joins are generally done in the application code. 

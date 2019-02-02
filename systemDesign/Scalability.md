@@ -2,7 +2,7 @@
 
 ## Clones
 
-![alt text](images/Scalability.png)
+![alt text](../images/Scalability.png)
 
 A user should always get the same results of his request back, independent what server he  “landed on”. That leads to the first golden rule for scalability: **every server contains exactly the same codebase and does not store any user-related data, like sessions or profile pictures, on local disc or memory**.
 
@@ -31,3 +31,6 @@ There are 2 patterns of caching your data.
  ## Asynchronism
 
  One of the methods for asynch processing is to use ex. RabbitMQ or ActiveMQ. The basic idea is to have a queue of tasks or jobs that a worker can process. 
+
+ ## Use case: bitly
+ https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/pastebin/README.md
