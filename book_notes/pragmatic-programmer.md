@@ -56,3 +56,36 @@ any set of rules can post to the blackboard and cause the triggering of
 yet more applicable rules
 
 - Use Blackboards to Coordinate Workflow
+
+## Chapter 6
+
+### Programming by coincidence
+
+- For code you write that others will call, the basic principles of good
+modularization and of hiding implementation behind small, well-documented interfaces can all help.
+
+- Don’t Program by Coincidence. Assumptions that aren’t based on well-established
+facts are the bane of all projects.
+
+### Algorithm Speed
+
+![alt text](../images/BigO.png)
+
+- Estimate and test the order of your algorithms
+
+### Refactoring
+
+- Writing software is like gardening. Rewriting, reworking, and re-architecting code is collectively known as
+refactoring
+
+- Any number of things may cause code to qualify for refactoring:
+    - Duplication. You’ve discovered a violation of the DRY principle
+    - Nonorthogonal design. You’ve discovered some code or design that could be made more orthogonal ("Changing A does not change B")
+    - Outdated knowledge. Things change, requirements drift, and your knowledge of the problem increases. Code needs to keep up.
+    - Performance. You need to move functionality from one area of the system to another to improve performance.
+
+- Refactor early, refactor often
+
+- Don’t try to refactor and add functionality at the same time.
+
+- Make sure you have good tests
