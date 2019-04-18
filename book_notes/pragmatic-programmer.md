@@ -89,3 +89,20 @@ refactoring
 - Don’t try to refactor and add functionality at the same time.
 
 - Make sure you have good tests
+
+### Code that's easy to test
+
+- Design to test. When you design a module, or even a single routine, you should design
+both its contract and the code to test that contract. By designing code
+to pass a test and fulfill its contract, you may well consider boundary conditions and other issues that wouldn’t occur to you otherwise.
+
+- By making the test code readily accessible, you are providing developers
+who may use your code with two invaluable resources:
+    - Examples of how to use all the functionality of your module
+
+    - A means to build regression tests to validate any future changes to the code
+
+- All software you write will be tested—if not by you and your team,
+then by the eventual users
+
+- Don’t Use Wizard Code You Don’t Understand
