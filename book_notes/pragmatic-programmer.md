@@ -106,3 +106,12 @@ who may use your code with two invaluable resources:
 then by the eventual users
 
 - Don’t Use Wizard Code You Don’t Understand
+
+## Chapter 7
+
+- Don't gather requirementes, dig for them
+- Work with a user to think like a user
+- Abstractions live longer than details
+- Use a project glossary
+- Don't think outside the box - find the box
+- Listen to nagging doubts - start when you're ready
