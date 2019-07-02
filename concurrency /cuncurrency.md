@@ -2,6 +2,7 @@
 - Both processes and threads are units of concurrency. Processes do not share a common memory, while threads do.
 - From the operating system’s point of view, a process is an independent piece of software that runs in its own virtual memory space.
 - On the contrary, a thread is a part of an application that shares a common memory with other threads of the same application. Using common memory allows to shave off lots of overhead, design the threads to cooperate and exchange data between them much faster.
+- While the stack of a thread can be used by only that thread and will not be shared with other thread. A heap is a property of a process and it is available to use by any thread. Heap is a shared memory space where data from one thread can be access by other threads as well.
 
 ### **Thread pool**
 - In computer programming, a thread pool is a software design pattern for achieving concurrency of execution in a computer program.
