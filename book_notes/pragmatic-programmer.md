@@ -115,3 +115,5 @@ then by the eventual users
 - Use a project glossary
 - Don't think outside the box - find the box
 - Listen to nagging doubts - start when you're ready
+
+for Wed 3, 39-41 (including 41)

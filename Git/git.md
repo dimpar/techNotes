@@ -28,4 +28,18 @@ If applied, this commit will sweet new API methods
 
 ## Git useful commands:
 
+Good looking logs
 - `- git log --graph --all --oneline --decorate`
+
+Rebasing with preserving merges (should have a clean tree with only your changes in the PR)
+- git rebase master --preserve-merges
+
+If you screwed up the rebase and have the entire changes that are already in master
+- git checkout master
+- git pull
+- git checkout -b your_new_branch
+- git cherry-pick 40sdf32d
+...
+- git branch -D your_old_branch
+- git branch -m your_new_branch your_old_branch (rename)
+- git push origin your_new_branch --force (you will loose the prev commit history)
