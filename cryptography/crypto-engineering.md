@@ -59,3 +59,34 @@ How to prevent a sybil attack?
 ### Proof of work
 A Proof-of-Work (PoW) system (or protocol, or function) is a measure to deter denial of service attacks and other service abuses such as spam on a network by requiring some work from the service requester, usually meaning processing time by a computer.
 
+### Blockchain
+you can't change anything in a past without having it reflected in the future. Each block has a hash of a previous block and if you change smth in that block, hash will change too. Hashes are collision resistant.
+
+#### What do we need in a transaction
+Account based model: (this is what Ethereum uses)
+- store list of accounts and balances
+- a transaction is valid if there is enough balance in the account
+- sender debited, receiver credited
+
+Replay attack - rebroadcasting the same trasaction again and again until a sendter has no money left.
+
+Unspent transaction outputs:
+- all coins are not the same
+- refer to specific coins when spending
+- coins are consumed, create new ones
+- a coin can only be spent once
+
+Bitcoin transaction format:
+- Input:
+-- prev txn ID } identifies an output
+-- index       }
+-- scriptSig (signature)
+they way use spend it produces a new output (coin)
+-- value in satoshis 10^8satoshis = bitcoin
+-- scriptPubKey
+
+### Pay-to-PubKey-Hash 
+(Pay-to-Public-Key-Hash, P2PKH) is the basic form of making a transaction and is the most common form of transaction on the Bitcoin network. Transactions that pay to a Bitcoin address contain P2PKH scripts that are resolved by sending the public key and a digital signature created by the corresponding private key.
+
+What are the transaction models? 
+(Unspent Transaction Output) Model and the second one is the Account/Balance Model. The UTXO model is employed by Bitcoin, and Ethereum uses the Account/Balance Model. ... All of the unspent transactions are kept in each fully-synchronized node, and therefore this model is named “UTXO”
