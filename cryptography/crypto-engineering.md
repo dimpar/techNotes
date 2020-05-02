@@ -90,3 +90,31 @@ they way use spend it produces a new output (coin)
 
 What are the transaction models? 
 (Unspent Transaction Output) Model and the second one is the Account/Balance Model. The UTXO model is employed by Bitcoin, and Ethereum uses the Account/Balance Model. ... All of the unspent transactions are kept in each fully-synchronized node, and therefore this model is named “UTXO”
+
+### Wallets and SPV
+Addresses are 20bytes long. 4 last bytes are checksums
+
+keep private keys offline
+
+---
+generate pub key without a private key?
+BIP32 Bitcoin improvement protocol 32 simplified:
+pubkey P, randomized r, privatekey p
+
+A = P + hash(r, 1) * G -> public key on a curve, G is a generator
+a = p + hash(r, 1) -> private key on a curve
+
+- can put pubkey and random data on server
+- server can make addresses as needed
+- observers can't link the addresses
+- revealing P and r would allow linking addresses but not stealing funds
+
+Have I gotten paid?
+add your pubkey hashes to a list
+for every transaction, look at every output script
+- it the scirpt matches your PKH script, you got money
+
+Wallet utxo list:
+- keep track of received payment
+- save all the utxos to disk
+- txid:index, amount, which key, height

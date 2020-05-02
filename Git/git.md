@@ -32,7 +32,8 @@ Good looking logs
 - `- git log --graph --all --oneline --decorate`
 
 Rebasing with preserving merges (should have a clean tree with only your changes in the PR)
-- git rebase master --preserve-merges
+- git rebase master --preserve-merges (deprecated)
+- git rebase master --rebase-merges
 
 If you screwed up the rebase and have the entire changes that are already in master
 - git checkout master
