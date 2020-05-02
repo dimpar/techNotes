@@ -1,5 +1,8 @@
 ## Default methods in functional interfaces
 
+### What is the need of functional interface?
+They can be used to pass a block of code to another method or object. Functional Interface serves as a data type for Lambda expressions. Since a Functional interface contains only one abstract method, the implementation of that method becomes the code that gets passed as an argument to another method.
+
 You can add default methods to the functional interface. 
 
 ```java
