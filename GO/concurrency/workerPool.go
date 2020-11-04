@@ -5,6 +5,8 @@ import (
     "time"
 )
 
+// Worker pools is a common pattern, where we need a queue of work to be done.
+
 /*
 Here’s the worker, of which we’ll run several concurrent instances. 
 These workers will receive work on the jobs channel and send the corresponding 
@@ -49,7 +51,7 @@ func main() {
 	goroutines is to use a WaitGroup.
 	*/
     for a := 1; a <= 5; a++ {
-        <-results
+        fmt.Println(<-results)
 	}
 	
 	/*
